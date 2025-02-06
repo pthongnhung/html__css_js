@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    table: bang
+    tr: bieu thi hang
+    td: cot
+    th: dung trong thead khi muon nhan manh va can chinh giua
+    ** cac thuoc tinh cua bang (attribute)
+    border: duong vien cua bang (dat trong the mo cua table)
+    cellpadding: khoang cach tu vien cua cot den noi dung
+    cellspacing: khonag cach tu vien cua bang den vien cua cot
+    colspan: gop cac cot
+    rowspan: gop cac hang
+
+    -->
+    <table border="1" cellpadding "15" cellspacing ="5">
+        <caption>Quan ly sinh vien</caption>
+        <thead>
+            <!--phan dau cua bang-->
+            <tr>
+                <th>STT</th>
+                <th bgcolor ="red">TEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--phan than cua bang-->
+            <tr>
+                <td align = "middle">1</td>
+                <td >Nguyen Van A</td>
+            </tr>
+            <tr>
+                <td align ="middle">2</td>
+                <td >Tran Thi B</td>
+            </tr>
+        <footer>
+            <tr>
+                <td colspan = "2">tong so sinh vien =2</td>
+            </tr>
+        </footer>
+        </tbody>
+        
+
+    </table>
+</body>
+</html>
