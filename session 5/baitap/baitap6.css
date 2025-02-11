@@ -1,0 +1,46 @@
+.red{
+    color: red;
+}
+.title{
+    border: 3px solid rgb(19, 222, 19);
+    text-align: center;
+    width: 50%;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+}
+.form{
+    background-color: rgb(235, 236, 236);
+    width: 50%;
+}
+.blue{
+    color: rgb(42, 42, 218);
+}
+.redbolder{
+    color: brown;
+    padding-left: 10px;
+}
+.black{
+    color: black;
+}
+.leftgreen{
+    border-left: 4px solid rgb(38, 208, 38) ;
+}
+.left{
+    padding-left: 15px;
+}
+.green{
+    background-color: rgb(78, 205, 78);
+    color: white;
+}
+.while{
+    background-color: white;
+}
+.huhu{
+    padding-left: 15px;
+}
+.top{
+    padding-top: 10px;
+}
+.buttom{
+    padding-bottom: 5px;
+}

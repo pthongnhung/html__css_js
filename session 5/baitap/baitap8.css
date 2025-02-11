@@ -1,0 +1,17 @@
+.line{
+    border-top: 2px dashed black;
+    width: 60%;
+    opacity: 0.6;
+}
+.left{
+    padding-left: 45px;
+    border-left:10px solid rgb(230, 229, 225);
+    padding-left:0.5cm;
+}
+.hihi{
+    display: inline-block;
+    opacity: 0.6;
+}
+.opacity{
+    opacity: 0.6;
+}

@@ -1,0 +1,33 @@
+.form{
+    background-color: rgb(231, 239, 239);
+    width: 50%;
+}
+h3{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid white;
+    padding: 15px;
+}
+th{
+    background-color: rgb(59, 59, 254);
+    color: white;
+}
+.while{
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
+.green{
+    background-color: rgb(64, 225, 64);
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
