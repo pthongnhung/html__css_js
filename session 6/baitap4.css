@@ -1,0 +1,45 @@
+.header{
+    background-color: rgb(23, 195, 23);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.title a{
+    color: #2424d6;
+    margin: 3px;
+    
+}
+.title{
+    padding-bottom: 15px;
+}
+.container{
+display: flex 
+
+}
+.sidebar{
+    border: 2px solid rgb(176, 189, 189);
+    width: 450px;
+    height: 650px;
+    margin-top: 20px;
+}
+.sidebar a{
+    color: rgb(44, 44, 221);
+}
+.cha{
+    display: flex;
+    gap: 20px;
+}
+.line{
+    border-bottom: 3px solid rgb(160, 166, 166);
+    width: 1500px;
+}
+.content{
+margin: 30px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top:4px;
+}

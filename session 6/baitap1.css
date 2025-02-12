@@ -1,0 +1,31 @@
+.header{
+    background-color: rgb(53, 53, 245);
+    color: white;
+    text-align: center;
+}
+.navision a{
+    margin: 0 15px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.navision {
+    margin-top: 10px;
+}
+img {
+    border: 3px solid rgb(61, 61, 222);
+    border-radius: 70%;
+    vertical-align: middle;
+    width: 100px;
+}
+.main{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: rgb(219, 232, 232);
+}
+.footer a{
+    color: rgb(64, 64, 228);
+}
+

@@ -1,0 +1,49 @@
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    
+}
+
+ h1 {
+    display: inline-block;
+    width: 70%;
+}
+
+.title {
+    display: inline-block;
+}
+.title a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin:  10px;
+}
+img{
+    border: 3px solid rgb(19, 8, 8);
+    border-radius: 80%;
+    vertical-align: middle;
+    width: 120px;
+}
+.main{
+    background-color: rgb(229, 232, 232);
+    width: 51.3%;
+}
+.main p{
+    margin-left: 40px;
+}
+.button{
+    background-color: black;
+    color: white;
+    width: 210px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.footer{
+        background-color: rgb(229, 232, 232);
+        width: 51%;
+        text-align: center;
+        height: 25px;
+}
