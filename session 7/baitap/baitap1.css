@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.background{
+    background-color: rgb(186, 193, 193);
+    line-height: 40px;
+    padding: 10px;
+    width: 600px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(26, 26, 78);
+}
+span{
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    color: rgb(17, 17, 109);
+}
+.button1{
+    background-color: rgb(225, 8, 8);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(145, 4, 4);
+    width: 150px;
+    height: 30px;
+}
+.button2 {
+    background-color: rgb(186, 193, 193);
+    color: rgb(21, 19, 19);
+    border-radius: 5px;
+    border: 2px solid rgb(123, 121, 121);
+    width: 150px;
+    height: 30px;
+}

@@ -1,0 +1,28 @@
+i{
+    border: 3px solid rgb(220, 100, 31);
+    background-color: rgb(220, 100, 31);
+    border-radius: 70%;
+    color: rgb(234, 232, 232);
+    padding: 6px;
+}
+.header span{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 7px;
+    
+}
+img{
+    margin-top: 20px;
+}
+h2{
+    margin-top: 5px;
+}
+.background{
+width: 30%;
+}
+.footer p{
+    opacity: 0.5;
+}
+h4{
+    opacity: 0.8;
+}

@@ -1,0 +1,21 @@
+h2{
+    border-left: 5px solid rgb(216, 143, 8);
+    padding-left: 10px;
+}
+.main p{
+    position: absolute;
+    top: 280px;
+    width: 20%;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    text-align: center;
+}
+.background{
+    width: 20%;
+}
+.footer p{
+    font-weight: bolder;
+}
+hr{
+    opacity: 0.4;
+}

@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+.form{
+    width: 25%;
+    height: 80px;
+}
+.b{
+    width: 25%;
+        height: 80px;
+        background-color: rgb(207, 197, 197);
+}
+.header{
+    background-color: rgb(233, 25, 25);
+   
+}
+.header p{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+}
+img{
+    position: relative;
+    left: 300px;
+    bottom:20px;
+}
+.main{
+    text-align: center;
+}
+span{
+    color:orangered;
+}
+hr{
+    width: 300px;
+    opacity: 0.5;
+}
+.button1{
+    position: relative;
+    left: 90px;
+    width: 200px;
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgb(183, 20, 20);
+}
+.button2{
+    border: 1px solid red;
+    border-radius: 10px;
+    position: relative;
+    left: 143px;
+    top: 20px;
+    background-color: white;
+    color: rgb(233, 25, 25);
+}
