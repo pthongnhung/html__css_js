@@ -1,0 +1,27 @@
+.form{
+    background-color: rgb(5, 1, 1);
+    width: 30%;
+    height: 50px;
+}
+input{
+    width: 90%;
+    height: 30px;
+    margin-top: 6px;
+    border: 0px solid white;
+    border-radius: 15px;
+}
+.search{
+    position: relative;
+    left: 35px;
+    opacity: 0.6;
+}
+.mic{
+    position: relative;
+    right: 60px;
+}
+.cammera{
+    position: relative;
+    margin-left: 400px;
+    position: relative;
+    bottom:25px;
+}

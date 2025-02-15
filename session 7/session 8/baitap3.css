@@ -1,0 +1,45 @@
+hr {
+    width: 130px;
+    margin-left: 24px;
+    position: relative;
+    bottom: 10px;
+
+    border: 2px solid rgb(222, 32, 32);
+}
+
+h3 {
+    margin-left: 24px;
+}
+
+table {
+    width: 70%;
+    margin-left: 20px;
+    border-collapse: collapse;
+    border-left: 0px solid white;
+    border-top: white;
+    border-bottom: white;
+    position: relative;
+
+}
+.two {
+    padding: 30px;
+}
+.form td:last-child{
+border-right: none !important;
+}
+.three {
+    padding: 30px;
+}
+button{
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    padding:5px;
+}
+img{
+    border-radius: 5px;
+}
+p{
+    opacity: 0.5;
+}

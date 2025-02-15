@@ -1,0 +1,55 @@
+form {
+    background-color: rgb(38, 15, 60);
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+}
+
+label {
+    color: white;
+}
+
+.name {
+    display: inline-block;
+    position: relative;
+    left: 8px;
+}
+
+.Email {
+    display: inline-block;
+    position: relative;
+    left: 90px;
+}
+
+.white {
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+button {
+    position: relative;
+    left: 10px;
+    top: 40px;
+    border: 2px solid rgb(157, 172, 172);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+input {
+    border: 2px solid rgb(157, 172, 172);
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    background-color: rgb(38, 15, 60) ;
+}
+
+textarea {
+    border: 2px solid rgb(157, 172, 172);
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    background-color: rgb(38, 15, 60);
+}
