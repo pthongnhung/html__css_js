@@ -1,0 +1,79 @@
+.header img {
+    height: 200px;
+    width: 890px;
+}
+
+.header p {
+    position: relative;
+    bottom: 100px;
+    color: rgb(249, 249, 249);
+    font-size: large;
+    font-weight: bold;
+}
+.header h2 {
+    position: relative;
+    bottom: 100px;
+    color: rgb(249, 249, 249);
+    font-size: large;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    bottom: 90px;
+}
+
+.main img {
+    margin: 2px;
+
+}
+.one h2 {
+    position: relative;
+    bottom: 130px;
+    width: 300px;
+    color: white;
+}
+
+.one p {
+    position: relative;
+    bottom: 130px;
+    width: 300px;
+    color: white;
+}
+.two img{
+    position: relative;
+    right: 20px;
+}
+.two h2 {
+    position: relative;
+    bottom: 120px;
+    width: 300px;
+    color: white;
+}
+
+.two p {
+    position: relative;
+    bottom: 110px;
+    width: 300px;
+    color: white;
+}
+.three h2 {
+    position: relative;
+    bottom: 120px;
+    left:10px;
+    width: 300px;
+    color: white;
+}
+
+.three p {
+    position: relative;
+    bottom: 110px;
+    width: 300px;
+    left: 10px;
+    color: white;
+}
+.three img {
+    position: relative;
+    right:40px;
+}

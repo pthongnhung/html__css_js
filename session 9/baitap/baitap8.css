@@ -1,0 +1,92 @@
+.header {
+    background-color: rgb(42, 41, 41);
+    color: white;
+    height: 100px;
+}
+
+.header p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+    position: relative;
+    top: 15px;
+}
+
+.main {
+    background-color: rgb(242, 243, 243);
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main p {
+    opacity: 0.6;
+}
+
+button {
+    background-color: rgb(101, 100, 100);
+    color: white;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.body h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container .item {
+    background-color: rgb(183, 190, 190);
+    margin: 1px;
+    width: 90px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42, 40, 40);
+    opacity: 0.5;
+}
+
+.prj {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.main2{
+    background-color: rgb(229, 223, 227);
+    text-align: center;
+    height: 130px;
+}
+.main2 h2{
+    position: relative;
+    top:18px;
+}
+.main2 p{
+    position: relative;
+    top:15px;
+}
+.footer{
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+.footer p{
+    position: relative;
+    top:15px;
+    opacity: 0.5;
+}

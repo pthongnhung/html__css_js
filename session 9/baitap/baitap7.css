@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    background-color: black;
+    COLOR: white;
+    justify-content: space-around;
+    height: 40PX;
+}
+
+.myBlog {
+    display: flex;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main {
+    background-color: rgb(223, 230, 230);
+    width: 40%;
+    height: 200px;
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+.form {
+    position: relative;
+    top: 10px;
+}
+
+.body {
+    background-color: rgb(250, 246, 246);
+    width: 40%;
+    height: 300px;
+    margin-left: 200px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 20px;
+}
+
+.form2 {
+    position: relative;
+    top: 10px
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40PX;
+}

@@ -1,0 +1,27 @@
+.Header{
+    background-color: rgb(58, 58, 219);
+    color: white;
+    width: 35%;
+}
+.main{
+    display: flex;
+    color: white;
+    display: flex;
+    gap: 8px;
+    position: relative;
+    bottom: 10px;
+}
+.Sidebar{
+    background-color: rgb(20, 212, 20);
+    height: 200px;
+    width: 150px;
+}
+.Content{
+    background-color: red;
+    width: 370px;
+}
+.Footer{
+    background-color: rgb(173, 84, 255);
+    color: white;
+    width: 35%;
+}

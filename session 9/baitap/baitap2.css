@@ -1,0 +1,24 @@
+.container{
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
+    width: 30%;
+}
+.container .item {
+    background-color:rgb(25, 232, 36);
+    margin: 4px;
+    height: 50px;
+    width: 100px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box2 {
+    display: flex;
+    justify-content: space-evenly;
+}
