@@ -1,0 +1,23 @@
+.form{
+    width: 20%;
+}
+.header button{
+    position: relative;
+    bottom: 190px;
+    border-radius: 5px;
+    border: 1px solid rgb(150, 154, 154);
+    left: 200px;
+    background-color: rgba(0,0, 0, 0);
+}
+.main img{
+    width:40px;
+    border-radius: 70%;
+}
+span{
+    position: relative;
+    bottom: 13px;
+    left:5px;
+}
+.opacity{
+    opacity: 0.5;
+}

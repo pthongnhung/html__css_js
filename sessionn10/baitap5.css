@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.form{
+    padding: 100px;
+    width: 50%;
+    background-color: rgb(199, 203, 203);
+}
+.header{
+    position: relative;
+    bottom:20px;
+    font-weight: bold;
+    
+}
+.line1{
+    display: flex;
+    gap:20px;
+}
+.line2{
+    display: flex;
+    gap:20px;
+}
+.line3{
+    display: flex;
+    gap:20px;
+}
+span{
+    position: relative;
+    left:10px;
+}
+button{
+    padding:4px;
+    background-color: rgb(67, 67, 206);
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+}
+hr{
+    position: relative;
+    top:7px;
+    border: 1px solid white
+}
+.icon{
+    text-align: center;
+    position: relative;
+    top:30px;
+}
+.gap{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}

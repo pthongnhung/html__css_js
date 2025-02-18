@@ -1,0 +1,31 @@
+.form{
+    background-color: rgb(219, 186, 146);
+    padding: 2cqw;
+    width: 32%;
+}
+.title{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    gap:20px;
+}
+.main{
+    display: flex;
+}
+button{
+    background-color: rgb(247, 29, 29);
+    color: white;
+    padding: 10px;
+    border: 0px;
+}
+img{
+    width: 20%;
+    height: 90px;
+    position: relative;
+    top:28px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 10px 1px white;
+}

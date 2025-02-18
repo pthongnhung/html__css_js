@@ -1,0 +1,50 @@
+.navigation {
+    background-color: rgb(212, 213, 213);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 65%;
+    height: 50px;
+}
+
+.header {
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.inline {
+    display: flex;
+    gap: 30px;
+
+}
+
+a {
+    position: relative;
+    left: 60px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.button {
+    margin-left: 200px;
+
+}
+
+button {
+    background-color: rgb(109, 116, 116);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+.search {
+    color: white;
+}
+
+.home {
+    font-weight: bold;
+}
