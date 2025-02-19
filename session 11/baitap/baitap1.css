@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.main {
+    display: flex;
+    gap: 5px;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.blue {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.pink {
+    background-color: pink;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+.footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 80px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:760px) {
+    .form {}
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Header {
+        width: 100%;
+        margin: 0px;
+        padding: 6px;
+        height: 50px;
+    }
+
+    .blue {
+        width: 100%;
+        height: 50px;
+    }
+
+    .yellow {
+        height: 50px;
+        width: 100%;
+    }
+
+    .pink {
+        height: 50px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 240px;
+    }
+
+}

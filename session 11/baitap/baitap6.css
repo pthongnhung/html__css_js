@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.header input {
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(165, 166, 166);
+    padding: 5px;
+    width: 300px;
+}
+
+.circle {
+    color: rgb(143, 151, 151);
+}
+
+.line {
+    padding: 30px;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.blue {
+    background-color: rgb(112, 112, 238);
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: rgb(186, 215, 215);
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.violet {
+    background-color: violet;
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink {
+    background-color: pink;
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: aqua;
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:0px) {
+    .circle {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header input {
+        width: 800px;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .blue {
+        width: 50%;
+    }
+
+    .yellow {
+        width: 50%;
+    }
+
+    .pink {
+        width: 50%;
+    }
+
+    .violet {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .yellow {
+        width: 34%;
+    }
+
+    .blue {
+        width: 32%;
+    }
+
+    .violet {
+        width: 100%;
+    }
+
+    .pink {
+        width: 34%;
+    }
+
+    .header input {
+        width: 1000px;
+    }
+}
