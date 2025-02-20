@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.card-body{
+    position: relative;
+    bottom:180px;
+}
+.card{
+    border: none;
+}
+.form{
+    display: flex;
+    gap:100px;
+    position: relative;
+    bottom: 150px;
+    margin-left: 20px;
+}
+.left{
+    display: flex;
+    gap:10px;
+}
+img{
+    position: relative;
+    padding: 10px;
+}
+.back{
+    display: flex;
+    
+}

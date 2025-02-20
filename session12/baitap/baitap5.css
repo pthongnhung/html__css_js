@@ -1,0 +1,11 @@
+.thead-dark{
+    background-color: black;
+    color: white;
+}
+.table,th,td{
+    border-collapse: collapse;
+    border: 2px solid rgb(153, 164, 164);
+}
+.color{
+    background-color: rgb(212, 210, 208);
+}

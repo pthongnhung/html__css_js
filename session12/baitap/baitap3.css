@@ -1,0 +1,16 @@
+.main{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+.header{
+    display: flex;
+}
+.icon{
+    font-size: 30px;
+    opacity: 0.6;
+}
+h2{
+    width: 1360px;
+    margin-left: 20px;
+}
