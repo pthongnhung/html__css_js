@@ -1,0 +1,44 @@
+.headerTop{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    height: 48px;
+    gap:231px;
+}
+b{
+    position: relative;
+    left:4px;
+}
+.headerBottom{
+    display: flex;
+    width: 645px;
+    height: 24px;
+    gap: 160px;
+
+}
+.block{
+    display: flex;
+    gap:48px;
+    width: 367px;
+    height: 24px;
+
+}
+.block2{
+    display: flex;
+    gap:24px;
+    width: 395px;
+    height: 38px;
+}
+.input{
+    display: flex;
+    Width: 243px;
+    Height:38px;
+    border-radius: 4px;
+    Padding:7px
+}
+
+
+
