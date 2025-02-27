@@ -1,0 +1,12 @@
+let str1 = "5";
+console.log(Number(str1));
+let str2 = "-1";
+console.log(Number(str2));
+let str3 = "Hello";
+console.log(Number(str3));
+let num1 = 55;
+console.log(String(num1));
+let num2 = -10;
+console.log(String(num2));
+let num3 = 0;
+console.log(String(num3));

@@ -1,0 +1,10 @@
+let equation = "phuong trinh co dang  ax^2 + bx + c = 0, hay nhap 3 so a,b,c voi ac<0 toi se cho ban biet nghiem cua phuong trinh";
+document.write(equation ,"</br>");
+let a = +prompt("Nhap a: ");
+let b = +prompt("Nhap b: ");
+let c = +prompt("Nhap c: ");
+let denta = b ** 2 - 4 * a * c;
+let x1 = (-b + Math.sqrt(denta)) / 2 * a;
+let x2 = (-b - Math.sqrt(denta)) / 2 * a;
+document.write("nghiem thu 1 cua phuong trinh: ", x1.toFixed(2) + "</br>");
+document.write("nghiem thu 2 cua phuong trinh: ", x2.toFixed(2) + "</br>");
