@@ -10,6 +10,7 @@ for (let i = 0; i < length; i++){ //dem so lan xuat hien cua phan tu trong mang
         countArr[element]++; //neu phan tu da xuat hien roi thi tang len so lan xuat hien 
     }
 }
+console.log(countArr);
 
 let max = 0;
 let minElement=0;
