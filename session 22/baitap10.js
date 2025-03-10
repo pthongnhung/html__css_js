@@ -15,6 +15,8 @@ do {
                 let element = +prompt("Nhap phan tu thu "+(i)+": ");
                 arr.push(element);
             }
+            console.log(arr);
+            
             break;
         case 2:
             if (arr.length == 0) {
