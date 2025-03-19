@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        position: relative;
+        top: 10px;
+    }
+</style>
+<body>
+    <p>username:</p>
+    <input type="text" id="userName" >
+    <p>password:</p>
+    <input type="text" id="passWord"> <br>
+    <button onclick="login()">login</button>
+    <script>
+        function login() {
+            let inputName = document.getElementById("userName").value;
+            let inputPass = document.getElementById("passWord").value;
+            if (inputName == "huanrose@gmail.com" && inputPass == "123456") {
+                console.log("Dang nhap thanh cong");
+            } else {
+                console.log("Dang nhap that bai");
+            }
+        }
+    </script>
+</body>
+</html>

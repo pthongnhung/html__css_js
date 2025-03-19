@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide_text {
+            visibility: hidden;
+            /* Ẩn văn bản nhưng vẫn giữ không gian của phần tử */
+        }
+    </style>
+</head>
+
+<body>
+    <p id="textElement">This is a text</p>
+    <button class="hideText" onclick="hide()">Hide text</button>
+    <button class="showText" onclick="show()">Show text</button>
+
+    <script>
+        // Function to hide the text
+        function hide() {
+            let textElement = document.getElementById("textElement");
+            textElement.classList.add("hide_text"); // Thêm class để ẩn văn bản
+        }
+
+        // Function to show the text
+        function show() {
+            let textElement = document.getElementById("textElement");
+            textElement.classList.remove("hide_text"); // Xóa class để hiển thị văn bản
+        }
+    </script>
+</body>
+
+</html>

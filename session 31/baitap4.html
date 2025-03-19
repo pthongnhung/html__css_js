@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            background-color: rgb(180, 191, 191);
+            width: 50%;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: rgb(180, 191, 191);
+            border-radius: 3px;
+            ;
+        }
+
+        .alert {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            gap: 500px;
+            margin: 20px;
+            border-radius: 3px;
+        }
+        .hide{
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div>
+            <h2>Modal Example</h2>
+            <button id="btn" style=" background-color: rgb(180, 191, 191);
+             border-radius: 3px;" onclick="showAlert()">Open Modal</button>
+        </div>
+        <div class="alert" id="bgr">
+            <div>some text in the Modal</div>
+            <div><button id="btnn" style=" background-color: white;
+                border:none;" onclick="hideAlert() ">X</button></div>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+             let elementBtn = document.getElementById("bgr");
+             elementBtn.classList.remove("hide");
+        }
+        function hideAlert() {
+            let elementBtnn = document.getElementById("bgr");
+            elementBtnn.classList.add("hide")
+        }
+    </script>
+    </bod>
+</html>
