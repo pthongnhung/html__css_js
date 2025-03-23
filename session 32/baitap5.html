@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul li {
+        list-style-type: none;
+    }
+      ul {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 30%;
+    }
+    .header{
+        display: flex;
+        position: relative;
+        bottom:10px;
+    }
+</style>
+<body>
+    <h2>To-Do List k24_PTIT</h2>
+   <div class="header">
+    <input type="text" id="myInput" placeholder="Nhap nhiem vu...">
+    <span><button id="Add" onclick="addMision()">Them</button></span>
+   </div>
+    <ul id="text">
+    </ul>
+    <script>
+        let listMision=[{name:"nhung"}];
+        function renderList(){
+            let text = document.getElementById("text");
+            text.innerHTML =""
+            let element="";
+            listMision.forEach((item,index) => {
+                element +=`<li style="display: flex;justify-content:space-between;">
+                    ${item.name}
+                    <button onclick="deleteMision(${index})">X</button>
+                </li>`;
+            });
+        
+            text.innerHTML=element;
+        }
+        renderList();
+        function addMision() {
+            let element=document.getElementById("myInput").value;
+            if(element==0){
+                alert("Khong duoc de rong");
+            }else{
+                let newElement={
+                    name:element
+                }
+                listMision.push(newElement);
+                renderList();
+                document.getElementById("myInput").value="";
+            }
+        }
+         function deleteMision(index) {
+            let check = confirm("Ban co muon xoa khong");
+            if(check){
+                listMision.splice(index, 1);
+                renderList();
+            }
+         }
+    </script>
+</body>
+</html>

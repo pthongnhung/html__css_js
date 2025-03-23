@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="background">
+    <button id="change">doi mau nen</button>
+</body>
+<script>
+   function  getRandomColor(){
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    document.getElementById("change").onclick=function randomColor(){
+         document.getElementById("background").style.backgroundColor = getRandomColor();
+    }
+</script>
+</html>

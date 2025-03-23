@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <p id="check"></p>
+    <button onclick="myValue()">check</button>
+    <script>
+        function isEmail(email){
+            if(!email.includes("@")){
+                return false;
+            }
+            if(!email.endsWith(".com") || email.endsWith(".vn")){
+                return false;
+            }
+            return true;
+        }
+        function myValue(){
+            let value=document.getElementById("myInput").value;
+            if(isEmail(value)){
+                let checked=document.getElementById("check");
+                checked.innerHTML=`email hop le`;
+                checked.style.color="green";
+            }else{
+                let checked = document.getElementById("check");
+                checked.innerHTML = `email khong hop le`;
+                 checked.style.color = "red";
+            }
+            
+            document.getElementById("myInput").value="";
+        }
+    </script>
+</body>
+</html>

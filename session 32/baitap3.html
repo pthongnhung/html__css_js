@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput"  placeholder="Nhap ten mon hoc">
+    <button onclick="addSUbject()">Them mon hoc</button>
+    <ol id="subject"></ol>
+    <script>
+        listSubject=[]
+        text=document.getElementById("subject");
+        text.innerHTML="";
+        function showSUbject() {
+            let element=""
+            listSubject.forEach((item)=>{
+             element +=` <li>${item.name}</li>`
+            });
+            text.innerHTML=element;
+          
+        }
+        function addSUbject(){
+            let element=document.getElementById("myInput").value;
+            console.log(element);
+            if(element==0){
+                alert("Ten mon hoc khong duoc de trong");
+            }else{
+                let newSubject = {
+                    name: element
+                }
+                listSubject.push(newSubject)
+                document.getElementById("myInput").value = ""
+                showSUbject();
+                
+            }
+        }
+    </script>
+</body>
+</html>

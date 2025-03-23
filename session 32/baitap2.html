@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click" onclick="numberUp()">Bam vao toi</button>
+    <p id="number">So lan bam: <span id="count">0</span> </p>
+    <script>
+        let total=0;
+        function numberUp() {
+            total++;
+            document.getElementById("count").innerHTML=total;
+        }
+       
+    </script>
+</body>
+</html>
