@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bgr">
+        <h1>Login</h1>
+        <label for="">Email:</label> <br>
+        <input type="text" id="email" placeholder="enter your email address"> <br>
+        <label for="">Password</label> <br>
+        <input type="text" id="password" placeholder="Enter your password"> <br>
+        <button id="myButton" style="background-color: blue;color: white;" onclick=" login()">login</button>
+    </div>
+    <script>
+        let users=JSON.parse(localStorage.getItem("users"));
+        function login(){
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+            for(let i=0;i<users.length;i++){
+                if(users[i].email==email && users[i].password==password){
+                    window.location="/baitap3home.html"
+                    return;
+                }
+            }
+            alert("Dang nhap khong hop le")
+        }
+    </script>
+</body>
+</html>

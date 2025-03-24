@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="bgr">
+        <h1>Todo List</h1>
+        <input type="text" id="taskInput" placeholder="Thêm việc cần làm...">
+        <br>
+        <button id="add">Thêm</button>
+        <div id="body"></div>
+    </div>
+
+    <script>
+        // Lấy dữ liệu từ localStorage hoặc khởi tạo mảng mặc định
+        let users = JSON.parse(localStorage.getItem("users")) || [{ name: "Nhung" }];
+
+        function renderList() {
+            let element = "";
+            for (let i = 0; i < users.length; i++) {
+                element += `<div>
+                    <span>${users[i].name}</span>
+                    <span><button onclick="deleteTask(${i})">Xóa</button></span>
+                </div>`;
+            }
+            document.getElementById("body").innerHTML = element;
+        }
+
+        function addTask() {
+            let taskInput = document.getElementById("taskInput").value.trim();
+            if (taskInput === "") {
+                alert("Vui lòng nhập nội dung công việc!");
+                return;
+            }
+            users.push({ name: taskInput }); // Thêm vào mảng
+            localStorage.setItem("users", JSON.stringify(users)); // Lưu vào localStorage
+            document.getElementById("taskInput").value = ""; // Xóa input sau khi nhập
+            renderList(); // Cập nhật danh sách
+        }
+
+        function deleteTask(index) {
+            users.splice(index, 1); // Xóa phần tử tại vị trí index
+            localStorage.setItem("users", JSON.stringify(users)); // Cập nhật localStorage
+            renderList(); // Cập nhật danh sách hiển thị
+        }
+
+        document.getElementById("add").addEventListener("click", addTask); // Gán sự kiện cho nút thêm
+
+        renderList(); // Gọi hàm hiển thị khi tải trang
+    </script>
+</body>
+
+</html>

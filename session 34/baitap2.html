@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        background-color: #cccccc;
+        margin-top: 10px;
+        width: 700px;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <h2>Task Management</h2>
+    <div class="bgr">
+        <input type="text" placeholder="content" id="content">
+        <input type="text" value="mm/dd/yyyy" name="" id="dueDate">
+        <select name="" id="status">
+            <option value="">choose status</option>
+            <option value="Pending">Pending</option>
+        </select>
+        <input type="text" placeholder="username" id="assignedTo">
+        <button id="myButton" style="background-color: blue;color: white;" onclick="addData()">Submit</button>
+    </div>
+    <table cellspacing="8">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Content</th>
+                <th>Due date</th>
+                <th>Status</th>
+                <th>Assigned to</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script>
+        const courses = JSON.parse(localStorage.getItem("courses")) || [
+            {
+                id: 1,
+                content: "Learn Javascript Session 01",
+                dueDate: "2023-04-17",
+                status: "Pending",
+                assignedTo: "Anh Bách",
+            },
+            {
+                id: 2,
+                content: "Learn Javascript Session 2",
+                dueDate: "2023-04-17",
+                status: "Pending",
+                assignedTo: "Lâm th",
+            },
+            {
+                id: 3,
+                content: "Learn CSS Session 1",
+                dueDate: "2023-04-17",
+                status: "Pending",
+                assignedTo: "Hiếu Ci Ớt Ớt",
+            },
+        ];
+        function renderData() {
+            let element = "";
+            for (let i = 0; i < courses.length; i++) {
+                element += `<tr>
+                        <td>${courses[i].id}</td>
+                        <td>${courses[i].content}</td>
+                        <td>${courses[i].dueDate}</td>
+                        <td>${courses[i].status}</td>
+                        <td>${courses[i].assignedTo}</td>
+                        <td><button>Sua</button></td>
+                        <td><button onclick="deleteData(${courses[i].id})">Xoa</button></td>
+                        </tr>`
+            }
+            document.getElementById("tbody").innerHTML = element;
+        }
+        renderData();
+
+        function addData() {
+            let id = courses.length ? courses[courses.length - 1].id + 1 : 1;
+            let content = document.getElementById("content").value;
+            let dueDate = document.getElementById("dueDate").value;
+            let status = document.getElementById("status").value;
+            let assignedTo = document.getElementById("assignedTo").value;
+            let course = {
+                id: id,
+                content: content,
+                status: status,
+                dueDate: dueDate,
+                assignedTo: assignedTo
+            }
+            courses.push(course);
+
+            document.getElementById("content").value = "";
+            document.getElementById("dueDate").value = "mm/dd/yyy";
+            document.getElementById("status").value = "";
+            document.getElementById("assignedTo").value = "";
+            localStorage.setItem("courses", JSON.stringify(courses));
+            renderData();
+        }
+        function deleteData(id) {
+            let index = courses.findIndex((item) => item.id);
+            courses.splice(index, 1);
+            localStorage.setItem("courses", JSON.stringify(courses));
+            renderData();
+        }
+        function updateData(){
+            
+        }
+    </script>
+</body>
+
+</html>

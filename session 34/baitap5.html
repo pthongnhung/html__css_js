@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Danh sách nhân viên Rikkei</h2>
+    <input type="text" id="name" placeholder="Tên nhân viên">
+    <input type="text" id="position" placeholder="Chức vụ">
+    <button onclick="addEmployee()">Thêm nhân viên</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Chức vụ</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="employeeList"></tbody>
+    </table>
+
+    <script>
+        let employees = JSON.parse(localStorage.getItem("employees")) || [
+            { name: "Nguyễn Văn A", position: "Developer" },
+            { name: "Trần Thị B", position: "Designer" },
+            { name: "Phạm Văn C", position: "Project Manager" }
+        ];
+
+        function renderList() {
+            let tbody = document.getElementById("employeeList");
+            tbody.innerHTML = ""; // Xóa danh sách cũ trước khi cập nhật
+
+            employees.forEach((employee, index) => {
+                let row = `<tr>
+                    <td>${index + 1}</td>
+                    <td>${employee.name}</td>
+                    <td>${employee.position}</td>
+                    <td><button onclick="deleteEmployee(${index})">Xóa</button></td>
+                </tr>`;
+                tbody.innerHTML += row;
+            });
+
+            localStorage.setItem("employees", JSON.stringify(employees)); // Cập nhật localStorage
+        }
+
+        function addEmployee() {
+            let name = document.getElementById("name").value.trim();
+            let position = document.getElementById("position").value.trim();
+
+            if (name === "" || position === "") {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            employees.push({ name, position });
+            document.getElementById("name").value = "";
+            document.getElementById("position").value = "";
+            renderList();
+        }
+
+        function deleteEmployee(index) {
+            employees.splice(index, 1);
+            renderList();
+        }
+
+        renderList(); // Hiển thị danh sách khi tải trang
+    </script>
+</body>
+
+</html>

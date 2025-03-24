@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bgr">
+        <h1>Register</h1>
+        <label for="">Email:</label> <br>
+        <input type="text" id="email" placeholder="enter your email address"> <br>
+        <label for="">Password</label> <br>
+        <input type="text" id="password" placeholder="Enter your password"> <br>
+        <label for="">Confirm Password</label> <br>
+        <input type="text" id="confirmPassword" placeholder="Enter your confirm password"> <br>
+        <button id="myButton" style="background-color: blue;color: white;" onclick="register()">Register</button>
+    </div>
+    <script>
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        function isEmail(email) {
+            if (!email.includes("@")) {
+                return false;
+            }
+            if (!email.endsWith(".com") || email.endsWith(".vn")) {
+                return false;
+            }
+            return true;
+        }
+        function register() {
+            let id = (Math.floor(Math.random()) * 1234);
+            console.log(123);
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let confirmPassword = document.getElementById("confirmPassword").value.trim();
+            if (!isEmail(email) || email === "") {
+                alert("Email khong hop le");
+                return;
+            }
+            if (password.length == 0) {
+                alert("Mat khau khong hop le")
+                return;
+            }
+            if (confirmPassword !== password) {
+                alert("Mat khau khong xac dinh")
+                return;
+            }
+            let exits = users.find((item) => item.email === email)
+            if (exits) {
+                alert("Tai khoan da ton tai");
+                return;
+            }
+            let user = {
+                id: id,
+                email: email,
+                password: password
+            }
+            users.push({ id, email, password });
+            localStorage.setItem("users",
+                JSON.stringify(users))
+            alert("da dang ky thanh cong")
+        }
+    </script>
+</body>
+</html>
